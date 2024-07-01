@@ -11,3 +11,27 @@ const workPages = await getCollection('goods');
 ))}
 </main>
 </Layout>
+
+<style lang="scss">
+  main {
+ width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* カード間のスペース */
+
+  }
+
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: repeat(2, 1fr); /* タブレットサイズで2カラムレイアウト */
+    }
+  }
+
+  @media (max-width: 600px) {
+ main {
+      grid-template-columns: 1fr; /* モバイルサイズで1カラムレイアウト */
+    }
+  }
+</style>

@@ -4,4 +4,41 @@
 
 <header>
   <h1>My shop</h1>
+  <a href="home">home</a>
+  <a href="about">about</a>
 </header>
+<style lang="scss">
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensures items are spaced evenly */
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+      font-size: 34px;
+      color: #000000;
+      margin: 0; /* Remove default margin */
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #000000;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #00ff00;
+      }
+    }
+
+    @media (max-width: 600px) {
+    }
+  }
+</style>

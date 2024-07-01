@@ -1,10 +1,39 @@
 ---
 const { href, title, body, thumbnail } = Astro.props;
 ---
+
 <article>
-<a href={href}>
-  <h2>{title}</h2>
-  <img src=`/images/${thumbnail}` alt={title} />
-  <p>{body}</p>
-</a>
+  <a href={href}>
+    <img src=`/images/${thumbnail}` alt={title} />
+    <h2>{title}</h2>
+    <p>{body}</p>
+  </a>
 </article>
+<style lang="scss">
+  h2 {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  article {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    margin-top: 100px;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+</style>
