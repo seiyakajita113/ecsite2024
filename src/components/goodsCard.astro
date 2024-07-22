@@ -4,7 +4,7 @@ const { href, title, body, thumbnail } = Astro.props;
 
 <article>
   <a href={href}>
-    <img src=`/images/${thumbnail}` alt={title} />
+    <img src=`/07_ecsite/images/${thumbnail[0]}` alt={title} />
     <h2>{title}</h2>
     <p>{body}</p>
   </a>
