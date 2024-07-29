@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/goodsLayout.astro
 title: Televisistar star sunflower filmer denim / blue
-text: 世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。
-thumbnail: ["PremierSoccerJersey01.png",
-"bigboy.png",
-"PremierSoccerJersey01.png"
+text: BALI(インドネシア)で全てハンドメイドで展開されているTELEVISI STAR。VX1000やフラワーのキャラクターなどのキャッチーな刺繍が施されているパンツは世界にも愛用者が続出しています。
+thumbnail: ["televisistar.png",
+"IMG_2659.png",
+"IMG_2660.png"
 ]
-price: 50,
+price: 18000
 state: false,
 id: 4710158-2
 colors: 赤色

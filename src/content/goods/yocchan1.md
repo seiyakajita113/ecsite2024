@@ -1,14 +1,16 @@
 ---
 layout: ../../layouts/goodsLayout.astro
 title: Premier Soccer Jersey
-text: 世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。
+text: ヨーロッパのクラブチームをイメージしたサッカーシャツ全面プリントでSaintSupremeのスクリプトロゴが入りその下には街の風景のプリントされた実際にあったらかなりカッコイイデザイン袖や脇下にもSaint Supremeのロゴが入ります
+
 thumbnail: ["PremierSoccerJersey01.png",
-"yardsale.png",
-"PremierSoccerJersey01.png"
+"IMG_2647.png",
+"IMG_2648.png"
 ]
-price: 50,
+price: 20000
 state: false,
 id: 4710158-2
 colors: 赤色
 maker: よっちゃん食品工業（株）
+
 ---

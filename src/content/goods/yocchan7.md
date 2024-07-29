@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/goodsLayout.astro
-title: カットよっちゃん（よっちゃんイカ）
-text: 世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。
-thumbnail: ["PremierSoccerJersey01.png",
-"bigboy.png",
-"PremierSoccerJersey01.png"
+title: Wasted Youth G-SHOCK
+text: フロントにはWastedYouthのロゴその下にG-SHOCKロゴをあしらい、サイドには”I can’t waste my time anymore”というメッセージがプリント。バックにはWasted Youthを象徴するチューリップのオリジナルグラフィックとコラボレーションG-SHOCK 『DW-5900WY』のイラストを落とし込んでいるスペシャルなアイテムです。
+thumbnail: ["IMG_2592.png",
+"IMG_2649.png",
+"IMG_2650.png"
 ]
-price: 50,
+price: 7000
 state: false,
 id: 4710158-2
 colors: 赤色

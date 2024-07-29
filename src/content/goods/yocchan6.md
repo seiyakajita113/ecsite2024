@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/goodsLayout.astro
 title: Polar Big boy jeans / silver black
-text: 世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。
-thumbnail: ["PremierSoccerJersey01.png",
+text: POLAR SKATE CO. よりのデニムの入荷です。人気のバギーフィットジーンズ。ハイウエストでテーパードされ、90'sを思い出す様な超バギーシルエットです。
+thumbnail: ["bigboy.png",
 "bigboy.png",
 "PremierSoccerJersey01.png"
 ]
-price: 50,
+price: 22000
 state: false,
 id: 4710158-2
 colors: 赤色

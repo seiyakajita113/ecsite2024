@@ -2,52 +2,125 @@
 const { frontmatter } = Astro.props;
 ---
 
-<div>
-  <h2>{frontmatter.title}</h2>
-
+<div class="inner">
   <div class="img-switcher">
-    <img
-      id="mainImg"
-      class="main-img"
-      src={`/07_ecsite/images/${frontmatter.thumbnail[0]}`}
-      alt="メイン画像"
-    />
-    <div class="thumbnails">
-      <button class="thumb-btn active">
+    <div class="syouhin">
+      <div class="hiroshi">
         <img
-          class="thumb-img"
+          id="mainImg"
+          class="main-img"
           src={`/07_ecsite/images/${frontmatter.thumbnail[0]}`}
-          alt="犬1"
+          alt="メイン画像"
         />
-      </button>
-      <button class="thumb-btn">
-        <img
-          class="thumb-img"
-          src={`/07_ecsite/images/${frontmatter.thumbnail[1]}`}
-          alt="犬2"
-        />
-      </button>
-      <button class="thumb-btn">
-        <img
-          class="thumb-img"
-          src={`/07_ecsite/images/${frontmatter.thumbnail[2]}`}
-          alt="犬3"
-        />
-      </button>
+        <div class="thumbnails">
+          <button class="thumb-btn active">
+            <img
+              class="thumb-img"
+              src={`/07_ecsite/images/${frontmatter.thumbnail[0]}`}
+              alt="犬1"
+            />
+          </button>
+          <button class="thumb-btn">
+            <img
+              class="thumb-img"
+              src={`/07_ecsite/images/${frontmatter.thumbnail[1]}`}
+              alt="犬2"
+            />
+          </button>
+          <button class="thumb-btn">
+            <img
+              class="thumb-img"
+              src={`/07_ecsite/images/${frontmatter.thumbnail[2]}`}
+              alt="犬3"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="syousai">
+        <h1>{frontmatter.title}</h1>
+
+        <h2>¥{frontmatter.price}</h2>
+        <h3>{frontmatter.text}</h3>
+        <h4>サイズ</h4>
+        <h5>S</h5>
+        <div class="product">
+          <div class="product-info">
+            <label for="quantity">商品個数:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="10"
+              value="1"
+            />
+          </div>
+          <button id="add-to-cart">カートに入れる</button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="st"></div>
   <slot />
 
   <style lang="scss">
+    .inner {
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .syouhin {
+      display: flex;
+    }
+
+    .syousai {
+      width: 50%;
+    }
+
+    .st {
+      padding: 100px;
+    }
+    h1 {
+      margin: 100px 0 0 100px;
+    }
+    p {
+      margin: 10px;
+    }
+    h2 {
+      margin: 0 auto;
+
+      display: inline-block;
+      margin: 30px 0 30px 100px;
+    }
+
+    h3 {
+      margin: 10px 0 10px 100px;
+    }
+
+    h4 {
+      margin: 10px 0 10px 100px;
+      font-size: 20px;
+    }
+
+    h5 {
+      margin: 0 0 10px 100px;
+      font-size: 18px;
+    }
     .img-switcher {
-      max-width: 900px;
-      margin: 20px auto;
+      max-width: 100%;
+    }
+
+    .hiroshi {
+      width: 50%;
     }
     .main-img {
       width: 100%;
       aspect-ratio: 3/2;
       object-fit: cover;
       border-radius: 20px;
+      height: 90%;
     }
     .thumbnails {
       display: flex;
@@ -55,7 +128,7 @@ const { frontmatter } = Astro.props;
       margin-top: 4%;
     }
     .thumb-btn {
-      width: 22%;
+      width: 30%;
       border: none;
       background: none;
       padding: 0;
@@ -69,6 +142,136 @@ const { frontmatter } = Astro.props;
     }
     .active {
       opacity: 0.5;
+    }
+
+    ///商品
+    .product {
+      padding: 50px 0 0 80px;
+      margin-bottom: 20px;
+      display: flex;
+
+      gap: 40px;
+      flex-direction: column;
+    }
+
+    .product-info {
+      margin-bottom: 10px;
+    }
+
+    .product-info label {
+      font-size: 1.2em;
+    }
+
+    .product-info input {
+      width: 60px;
+      height: 30px;
+      font-size: 1.2em;
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    #add-to-cart {
+      background-color: #4caf50;
+      color: white;
+      width: 24.7%;
+      border: none;
+      cursor: pointer;
+      padding: 10px 40px;
+    }
+
+    #add-to-cart:hover {
+      background-color: #45a049;
+    }
+
+    #cart {
+      padding: 20px;
+    }
+
+    #cart-items {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+      }
+
+      h2 {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      h3 {
+        margin: 10px 0 10px 0;
+        font-size: 18px;
+      }
+
+      h4 {
+        margin: 10px 0 10px 0;
+      }
+
+      h5 {
+        margin: 10px 0 10px 0;
+      }
+
+      .syouhin {
+        display: block;
+      }
+
+      .main-img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 20px;
+        height: 200%;
+      }
+      .thumb-img {
+        width: 200%;
+      }
+
+      .thumb-btn {
+        width: 14%;
+      }
+
+      .hiroshi {
+        width: 100%;
+      }
+
+      .syousai {
+        width: 100%;
+      }
+
+      .thumbnails {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .product,
+      #cart {
+        padding: 0px;
+      }
+
+      #add-to-cart {
+        width: 50%;
+        padding: 5px;
+      }
+
+      .product-info input {
+        width: 50px;
+        height: 25px;
+        font-size: 1em;
+      }
+
+      .st {
+        padding: 0px;
+      }
     }
   </style>
 

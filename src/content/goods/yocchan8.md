@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/goodsLayout.astro
-title: カットよっちゃん（よっちゃんイカ）
-text: 世界中から厳選したイカと、日本近海で獲れたタラのすり身を主に使用した魚肉シートを食べやすい一口サイズにカットし、秘伝の調味でさっぱりとした酢味に仕上げました。
-thumbnail: ["PremierSoccerJersey01.png",
-"bigboy.png",
-"PremierSoccerJersey01.png"
+title: Fucking Awesome
+text: 通気性がよく、肌触りの良いコットンTシャツ。キティ・フェタスの胸プリントが特徴です。シンプルで着やすいデザインに、ナチュラルで風合い抜群の生地感です。
+thumbnail: ["IMG_2656.png",
+"IMG_2658.png",
+"IMG_2657.png"
 ]
-price: 50,
+price: 7000
 state: false,
 id: 4710158-2
 colors: 赤色
